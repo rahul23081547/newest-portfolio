@@ -1,0 +1,218 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3 {
+    text-align: center;
+    margin: 20px 0;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out forwards;
+  }
+  
+  p {
+    text-align: center;
+    margin: 10px 0;
+    opacity: 0;
+    animation: fadeInUp 1.2s ease-in-out forwards;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(to right, #ff7f50, #ff4500);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero-content {
+    animation: slideIn 1.2s ease-in-out forwards;
+  }
+  
+  .profile-photo {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    animation: scaleUp 1.5s ease-in-out forwards;
+  }
+  
+  .btn {
+    display: inline-block;
+    background: white;
+    color: #ff4500;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeInUp 1.8s ease-in-out forwards;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    transform: scale(1.1);
+  }
+  
+  /* About Me Section */
+  .about {
+    background: #ffffff;
+    padding: 50px 20px;
+    animation: fadeIn 1.2s ease-in-out forwards;
+  }
+  
+  .about h2 {
+    animation: fadeInLeft 1s ease-in-out forwards;
+  }
+  
+  .about p {
+    animation: fadeInRight 1.2s ease-in-out forwards;
+  }
+  
+  /* Projects Section */
+  .projects {
+    background: #f0f0f0;
+    padding: 50px 20px;
+  }
+  
+  .project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .project {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.5s ease-in-out forwards;
+  }
+  
+  .project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    animation: fadeIn 1.3s ease-in-out forwards;
+  }
+  
+  .project h3, .project p {
+    margin: 10px;
+    animation: fadeInUp 1.5s ease-in-out forwards;
+  }
+  
+  /* Contact Section */
+  .contact {
+    background: #ff7f50;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    animation: fadeInUp 1.2s ease-in-out forwards;
+  }
+  
+  .contact p, .contact a {
+    animation: fadeInUp 1.4s ease-in-out forwards;
+  }
+  
+  .contact a {
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+    background: #ff4500;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .contact a:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    opacity: 0;
+    animation: fadeInUp 1.8s ease-in-out forwards;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes scaleUp {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
